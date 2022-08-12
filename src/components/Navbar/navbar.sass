@@ -1,0 +1,84 @@
+@import '../../styles/variables'
+
+.navbar
+    position: fixed
+    top: 0
+    z-index: 10
+    width: 100%
+    height: 80px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: $off-black
+    padding: 0 3rem
+    border-bottom: 1px solid #ffffff20
+    @media only screen and (max-width: 1050px)
+        padding: 0 1.5rem
+    &__nav
+        display: flex
+        align-items: center
+        @media only screen and (max-width: 1050px)
+            display: none
+    &__link
+        font-size: 1rem
+        color: $off-white
+        margin: 0 1rem
+        padding: .5rem 0
+        position: relative
+        &.active
+            color: $accent
+            font-weight: 900
+        &::after
+            content: ''
+            position: absolute
+            bottom: 0
+            right: 0
+            left: auto
+            background: $accent
+            width: 0
+            height: 1px
+            -webkit-transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1)
+            transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1)
+        &:hover
+            &::after
+                width: 100%
+                right: auto
+                left: 0
+    &__logo
+        margin-left: -70px
+        @media only screen and (max-width: 1050px)
+            margin-left: 0
+    &__logo-text
+        font-size: 2rem
+        color: $off-white
+    &__utils
+        display: flex
+        align-items: center
+    &__utils-link
+        margin: 0 .5rem
+        display: flex
+        align-items: center
+        color: $off-white
+        &:hover
+            .navbar__utils-icon
+                color: $accent
+        @media only screen and (max-width: 1050px)
+            margin: 0 .7rem
+    &__utils-icon
+        font-size: 1.5rem
+        margin-right: .2
+        rem
+    &__utils-text
+        font-size: 1rem
+        @media only screen and (max-width: 1050px)
+            display: none
+    &__buregr
+        font-size: 2rem
+        color: $off-white
+        display: none
+        cursor: pointer
+        &:hover
+            color: $accent
+        @media only screen and (max-width: 1050px)
+            display: flex
+            margin-left: .5rem

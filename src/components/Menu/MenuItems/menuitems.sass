@@ -1,0 +1,87 @@
+@import '../../../styles/variables'
+
+.menu-items
+    width: 100%
+    min-height: 100vh
+    padding: 3rem 5rem
+    &__container
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__search-container
+        margin-bottom: 1rem
+        width: 700px
+        height: 40px
+        background-color: lighten($off-black, 7%)
+        display: flex
+        align-items: center
+        overflow: hidden
+        border-radius: 3px
+    &__search-input
+        height: 100%
+        width: 90%
+        border: none
+        outline: none
+        padding: 0 1rem
+        font-size: 1rem
+        color: $off-white
+        font-weight: 400
+        background-color: lighten($off-black, 7%)
+        &::placeholder
+            color: $off-white
+            opacity: .75
+            letter-spacing: 1px
+        &:focus
+            background-color: lighten($off-black, 12%)
+    &__search-icon
+        margin-left: 1.5rem
+        font-size: 1.45rem
+        color: $off-white
+    &__categories
+        display: flex
+        align-items: center
+        overflow-x: scroll
+        width: 100%
+        height: 80px
+        white-space: nowrap
+        position: sticky
+        background-color: $off-black
+        top: 80px
+        z-index: 3
+        -webkit-overflow-scrolling: touch
+        scroll-snap-type: x proximity
+        scroll-snap-align: start
+        &::-webkit-scrollbar
+            width: 10px
+            height: 2px
+        &::-webkit-scrollbar-track
+            background-color: #f9f9f92c
+        &::-webkit-scrollbar-thumb
+            background-color: #f9f9f958
+    &__category
+        flex: 0 0 auto
+        font-size: 1.2rem
+        color: $off-white
+        font-weight: 500
+        margin-right: 1rem
+        padding: .5rem 1rem
+        background-color: lighten($off-black, 5%)
+        opacity: .8
+        display: inline-block
+        &:hover
+            background-color: lighten($off-black, 7%)
+            color: $accent
+            cursor: pointer
+    &__items-container
+        width: 100%
+        display: flex
+        flex-direction: column
+    &__items
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr))
+        grid-gap: 1.5rem
+    &__category-title
+        color: $accent
+        font-size: 2.5rem
+        grid-column: 1 / span 3
+        margin: 2rem 0 1rem 0

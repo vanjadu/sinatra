@@ -1,0 +1,33 @@
+// fonts
+// titles
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap')
+// general
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap')
+
+// vars
+@import './_variables'
+
+// setup
+*
+    margin: 0
+    padding: 0
+    text-decoration: none
+    list-style: none
+    box-sizing: border-box
+    font-family: 'Lato', sans-serif
+    font-weight: 300
+html
+    scroll-behavior: smooth
+    scroll-padding-top: 170px
+body
+    background-color: $off-black
+h1, h2, h3, h4, h5, h6
+    font-family: 'Playfair Display', sans-serif
+    font-weight: 500
+span
+    all: inherit
+:target:before
+    content: ''
+    display: block
+    height: 200px
+    margin: -200px 0 0

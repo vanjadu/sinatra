@@ -1,0 +1,59 @@
+@import '../../../styles/_variables'
+
+.about
+    width: 100%
+    min-height: 100vh
+    background-color: $off-white
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 4rem 0
+    overflow: hidden
+    position: relative
+    &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 30%
+        background-color: $off-black
+        z-index: 0
+    &__title
+        font-size: 3rem
+        color: $off-black
+        margin-bottom: 1rem
+        span
+            display: flex
+            align-items: center
+        @media only screen and (max-width: 860px)
+            font-size: 2.2rem
+        @media only screen and (max-width: 650px)
+            width: 90%
+            text-align: center
+    &__title-line
+        width: 100px
+        height: 3px
+        margin-left: 2rem
+        margin-right: .5rem
+        background-color: $off-black
+        border-radius: $radius
+        @media only screen and (max-width: 650px)
+            display: none
+    &__desc
+        width: 55%
+        font-size: 1.2rem
+        line-height: 32px
+        color: $off-black
+        opacity: .75
+        margin-bottom: 4rem
+        @media only screen and (max-width: 860px)
+            width: 90%
+            font-size: 1rem
+            line-height: 25px
+    &__image
+        position: relative
+        z-index: 1
+        width: 90%
+        height: 70vh
+        object-fit: cover

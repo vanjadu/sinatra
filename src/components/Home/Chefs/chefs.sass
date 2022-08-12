@@ -1,0 +1,84 @@
+@import '../../../styles/variables'
+
+.chefs
+    width: 100%
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 0 5rem
+    @media only screen and (max-width: 1050px)
+        padding: 0 1.5rem
+    @media only screen and (max-width: 900px)
+        margin-top: 5rem
+    &__title
+        font-size: 3rem
+        color: $off-white
+    &__container
+        margin-top: 3.5rem
+        display: flex
+        align-items: center
+        justify-content: center
+        @media only screen and (max-width: 1050px)
+            flex-direction: column
+            align-items: center
+    &__img-container
+        overflow: hidden
+        width: 500px
+        height: 520px
+        @media only screen and (max-width: 1050px)
+            width: 300px
+        @media only screen and (max-width: 900px)
+            width: 100%
+    &__img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &__text
+        margin-left: 5rem
+        width: 30%
+        @media only screen and (max-width: 900px)
+            width: 100%
+            margin-left: 0
+            margin-top: 3rem
+    &__text-title
+        font-size: 2.2rem
+        color: $off-white
+        @media only screen and (max-width: 900px)
+            text-align: center
+    &__text-subtitle
+        margin-top: .5rem
+        font-size: 1.2rem
+        color: $off-white
+        margin-bottom: 2rem
+        font-style: italic
+        @media only screen and (max-width: 900px)
+            text-align: center
+    &__text-desc
+        font-size: 1.2rem
+        line-height: 32px
+        color: $off-white
+        opacity: .75
+        margin-bottom: 1rem
+        @media only screen and (max-width: 900px)
+            text-align: center
+    &__link
+        margin-top: 2rem
+        display: inline-flex
+        color: $off-white
+        font-size: 1.2rem
+        align-items: center
+        font-style: italic
+        border-bottom: 1px solid $off-white
+        padding: .5rem 0
+        &:hover
+            .chefs__link-icon
+                color: $accent
+        @media only screen and (max-width: 900px)
+            text-align: center
+            display: block
+            margin: 2rem auto 0 auto
+            width: 60%
+    &__link-icon
+        font-size: 1.4rem
+        margin-left: 1rem

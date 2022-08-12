@@ -1,0 +1,39 @@
+@import '../../../styles/variables'
+
+.single-modal
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate( -50%, -50%) scale(0)
+    width: 100%
+    height: 100%
+    z-index: 1
+    background-color: $accent
+    transform-origin: center
+    transition: all .2s ease-in-out
+    display: flex
+    justify-content: center
+    align-items: center
+    &.open
+        transform: translate( -50%, -50%) scale(1)
+    &__container
+        display: flex
+        flex-direction: column
+    &__variations
+        display: flex
+        align-items: flex-start
+    &__variation
+        display: flex
+        flex-direction: column
+        &:first-child
+            margin-right: 2.5rem
+    &__var-label
+        font-size: 1.2rem
+        color: $off-white
+        font-weight: 500
+    &__var-price
+        font-size: 1rem
+        color: $off-white
+        font-weight: 500
+        margin-top: .5rem
+        opacity: .85

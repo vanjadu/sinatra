@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import './styles/app.sass'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
+import Navbar from './components/Navbar'
+import AlterNav from './components/AlterNav'
+import Footer from './components/Footer'
+import AnimatedRoutes from './AnimatedRoutes'
+import { UserProvider } from './context/UserContext'
+import { CartProvider } from './context/CartContext'
 
 function App() {
+  const [alterNav, setAlterNav] = useState<boolean>(false)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <UserProvider>
+      <CartProvider>
+        <Navbar alterNav={alterNav} setAlterNav={setAlterNav} />
+        <AlterNav alterNav={alterNav} />
+        <ToastContainer autoClose={2000} pauseOnHover={false} />
+        <AnimatedRoutes />
+        <Footer />
+      </CartProvider>
+    </UserProvider>
+  )
 }
 
-export default App;
+export default App

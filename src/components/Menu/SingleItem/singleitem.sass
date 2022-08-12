@@ -1,0 +1,66 @@
+@import '../../../styles/variables'
+
+.single
+    min-width: 300px
+    min-height: 240px
+    background-color: lighten($off-black, 5%)
+    padding: 1rem
+    margin-bottom: 1rem
+    position: relative
+    &:hover
+        background-color: lighten($off-black, 7%)
+        box-shadow: 0 1px 2px rgb(0 0 0 / 7%), 0 2px 4px rgb(0 0 0 / 7%), 0 4px 8px rgb(0 0 0 / 7%), 0 8px 16px rgb(0 0 0 / 7%), 0 16px 32px rgb(0 0 0 / 7%), 0 32px 64px rgb(0 0 0 / 7%)
+        .single__title
+            color: $accent
+    &__cat
+        font-size: 1rem
+        color: $off-white
+        opacity: .75
+    &__title
+        font-size: 1.5rem
+        color: $off-white
+        margin: .5rem 0 1rem 0
+    &__desc
+        font-size: 1rem
+        color: $off-white
+        line-height: 25px
+    &__var
+        display: flex
+        align-items: flex-start
+        margin-top: 1rem
+    &__var-card
+        display: flex
+        flex-direction: column
+        &:first-child
+            margin-right: 2.5rem
+    &__var-label
+        font-size: 1rem
+        color: $off-white
+        margin-bottom: .3rem
+    &__var-price
+        font-size: 1rem
+        color: $off-white
+        font-weight: 400
+        opacity: .65
+    &__price
+        margin-top: 1rem
+        font-size: 1rem
+        color: $off-white
+        font-weight: 400
+        opacity: .65
+    &__btn
+        margin-top: 1.5rem
+        outline: none
+        border: none
+        background-color: transparent
+        color: $off-white
+        display: flex
+        align-items: center
+        font-size: 1.1rem
+        border-bottom: 1px solid $off-white
+        cursor: pointer
+        &:hover
+            .single__btn-icon
+                color: $accent
+    &__btn-icon
+        margin-left: .5rem
