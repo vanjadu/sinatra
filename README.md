@@ -1,46 +1,62 @@
-# Getting Started with Create React App
+# Sinatra Restaurant
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React & Firebase app for food ordering.
 
-## Available Scripts
+## Authors
 
-In the project directory, you can run:
+- [@vanjadulikravic](https://www.instagram.com/dulikravicvanja/)
 
-### `npm start`
+## Badges
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Add badges from somewhere like: [shields.io](https://shields.io/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-### `npm test`
+## Color Reference
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Color        | Hex                                                              |
+| ------------ | ---------------------------------------------------------------- |
+| Off White    | ![#f9f9f9](https://via.placeholder.com/10/f9f9f9?text=+) #f9f9f9 |
+| Off Black    | ![#0F0E0E](https://via.placeholder.com/10/0F0E0E?text=+) #0F0E0E |
+| Accent Color | ![#3AB4F2](https://via.placeholder.com/10/3AB4F2?text=+) #3AB4F2 |
 
-### `npm run build`
+## Environment Variables
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To run this project, you will need to add the following Firebase environment variables to your .env file
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`API_KEY`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`AUTH_DOMAIN`
 
-### `npm run eject`
+`AUTH_DOMAIN`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+`ROJECT_ID`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`STORAGE_BUCKET`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`MESSAGING_SENDER_ID`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+`APP_ID`
 
-## Learn More
+`MEASUREMENT_ID`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Features
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Login / Auth system
+- Shopping Cart
+- Menu filter
+- Cross browser
+
+## Installation
+
+Install my-project with npm
+
+```bash
+npm i
+```
+
+![Logo](https://i.postimg.cc/W1z3cC59/favicon.png)
+
+## Screenshots
+
+![App Screenshot](https://i.postimg.cc/L5vHr3LK/Screenshot-2022-08-11-at-13-49-34.png)
